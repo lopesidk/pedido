@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tenho uma chance?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+        .box {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Sabe... eu tenho sentido algo muito verdadeiro por você.</h2>
+        <p>Cada momento que a gente passa junto só me faz ter mais certeza de que quero estar do teu lado, te fazer sorrir, cuidar de você e construir algo bom.</p>
+        <h3>Será que eu tenho uma chance de te fazer feliz de verdade?</h3>
+        <button class="yes" onclick="respostaSim()">Sim ❤️</button>
+        <button class="no" onclick="respostaNao()">Não 😢</button>
+        <div id="response"></div>
+    </div>
+
+    <script>
+        function respostaSim() {
+            document.getElementById('response').innerHTML = "Agora é oficial ❤️🥳";
+        }
+        function respostaNao() {
+            document.getElementById('response').innerHTML = "Poxa... vou continuar tentando 😅";
+        }
+    </script>
+</body>
+</html>
